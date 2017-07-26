@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544368141E72A6E700F5989C /* NSObject+HSClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 544368121E72A6E700F5989C /* NSObject+HSClassInfo.h */; };
+		544368151E72A6E700F5989C /* NSObject+HSClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 544368131E72A6E700F5989C /* NSObject+HSClassInfo.m */; };
+		544368221E72A86700F5989C /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 544368211E72A86700F5989C /* CaptainHook.h */; };
+		544368251E72A90B00F5989C /* HKCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 544368231E72A90B00F5989C /* HKCommonDefine.h */; };
+		544368261E72A90B00F5989C /* HKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 544368241E72A90B00F5989C /* HKCommonDefine.m */; };
+		544460D21E7BD11200180767 /* HKHttpDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 544460C51E7BD11200180767 /* HKHttpDownloadCache.h */; };
+		544460D31E7BD11200180767 /* HKHttpDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 544460C61E7BD11200180767 /* HKHttpDownloadCache.m */; };
+		544460D41E7BD11200180767 /* HKHttpDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 544460C71E7BD11200180767 /* HKHttpDownloader.h */; };
+		544460D51E7BD11200180767 /* HKHttpDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 544460C81E7BD11200180767 /* HKHttpDownloader.m */; };
+		544460D61E7BD11200180767 /* HKAppAuthorizationMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 544460C91E7BD11200180767 /* HKAppAuthorizationMgr.h */; };
+		544460D71E7BD11200180767 /* HKAppAuthorizationMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 544460CA1E7BD11200180767 /* HKAppAuthorizationMgr.m */; };
+		544460D81E7BD11200180767 /* HKTicktockTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 544460CB1E7BD11200180767 /* HKTicktockTask.h */; };
+		544460D91E7BD11200180767 /* HKTicktockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 544460CC1E7BD11200180767 /* HKTicktockTask.m */; };
+		544460DB1E7BD11200180767 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 544460CF1E7BD11200180767 /* JSONKit.h */; };
+		544460DC1E7BD11200180767 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 544460D01E7BD11200180767 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5450D5911E728BF800048798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450D5901E728BF800048798 /* Foundation.framework */; };
+		5450D5931E728BF800048798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450D5921E728BF800048798 /* UIKit.framework */; };
+		5450D59F1E728BF800048798 /* HookSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5450D59E1E728BF800048798 /* HookSDK.m */; };
+		545393F41E8E8D0F007209F8 /* WXHongBaoAssistantMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393D51E8E8D0F007209F8 /* WXHongBaoAssistantMenu.h */; };
+		545393F51E8E8D0F007209F8 /* WXHongBaoAssistantMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393D61E8E8D0F007209F8 /* WXHongBaoAssistantMenu.m */; };
+		545393F61E8E8D0F007209F8 /* WXHongBaoAssistantWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393D71E8E8D0F007209F8 /* WXHongBaoAssistantWindow.h */; };
+		545393F71E8E8D0F007209F8 /* WXHongBaoAssistantWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393D81E8E8D0F007209F8 /* WXHongBaoAssistantWindow.m */; };
+		545393F81E8E8D0F007209F8 /* WXHongBaoLogWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393D91E8E8D0F007209F8 /* WXHongBaoLogWindow.h */; };
+		545393F91E8E8D0F007209F8 /* WXHongBaoLogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393DA1E8E8D0F007209F8 /* WXHongBaoLogWindow.m */; };
+		545393FC1E8E8D0F007209F8 /* WXHongBaoRuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393DE1E8E8D0F007209F8 /* WXHongBaoRuleHandler.h */; };
+		545393FD1E8E8D0F007209F8 /* WXHongBaoRuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393DF1E8E8D0F007209F8 /* WXHongBaoRuleHandler.m */; };
+		545393FE1E8E8D0F007209F8 /* WXHongBaoRuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393E01E8E8D0F007209F8 /* WXHongBaoRuleManager.h */; };
+		545393FF1E8E8D0F007209F8 /* WXHongBaoRuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393E11E8E8D0F007209F8 /* WXHongBaoRuleManager.m */; };
+		545394001E8E8D0F007209F8 /* WXHongBaoRuleUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393E21E8E8D0F007209F8 /* WXHongBaoRuleUtility.h */; };
+		545394011E8E8D0F007209F8 /* WXHongBaoRuleUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393E31E8E8D0F007209F8 /* WXHongBaoRuleUtility.m */; };
+		545394021E8E8D0F007209F8 /* WXHongBaoTitleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393E41E8E8D0F007209F8 /* WXHongBaoTitleInfo.h */; };
+		545394031E8E8D0F007209F8 /* WXHongBaoTitleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393E51E8E8D0F007209F8 /* WXHongBaoTitleInfo.m */; };
+		545394041E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393E81E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.h */; };
+		545394051E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393E91E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.m */; };
+		545394061E8E8D0F007209F8 /* HKAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393EA1E8E8D0F007209F8 /* HKAlertView.h */; };
+		545394071E8E8D0F007209F8 /* HKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393EB1E8E8D0F007209F8 /* HKAlertView.m */; };
+		545394081E8E8D0F007209F8 /* HKAppearViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393EC1E8E8D0F007209F8 /* HKAppearViewController.h */; };
+		545394091E8E8D0F007209F8 /* HKAppearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393ED1E8E8D0F007209F8 /* HKAppearViewController.m */; };
+		5453940A1E8E8D0F007209F8 /* WXHongBaoSettingMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393EE1E8E8D0F007209F8 /* WXHongBaoSettingMgr.h */; };
+		5453940B1E8E8D0F007209F8 /* WXHongBaoSettingMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393EF1E8E8D0F007209F8 /* WXHongBaoSettingMgr.m */; };
+		5453940C1E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393F01E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.h */; };
+		5453940D1E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545393F11E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.m */; };
+		5453940E1E8E8D0F007209F8 /* WXHongBaoSettingViewController..m in Sources */ = {isa = PBXBuildFile; fileRef = 545393F21E8E8D0F007209F8 /* WXHongBaoSettingViewController..m */; };
+		5453940F1E8E8D0F007209F8 /* WXHongBaoSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 545393F31E8E8D0F007209F8 /* WXHongBaoSettingViewController.h */; };
+		545394121E8E8D4A007209F8 /* NSData+HKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 545394101E8E8D4A007209F8 /* NSData+HKCache.h */; };
+		545394131E8E8D4A007209F8 /* NSData+HKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 545394111E8E8D4A007209F8 /* NSData+HKCache.m */; };
+		545394AE1E8E9B51007209F8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 545394AC1E8E9B51007209F8 /* GCDAsyncSocket.h */; };
+		545394AF1E8E9B51007209F8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 545394AD1E8E9B51007209F8 /* GCDAsyncSocket.m */; };
+		545394D31E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 545394D11E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.h */; };
+		545394D41E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545394D21E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.m */; };
+		5484E94D1E8111E000D49209 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5484E94C1E8111E000D49209 /* CoreTelephony.framework */; };
+		5484E94F1E8111F000D49209 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5484E94E1E8111F000D49209 /* libz.tbd */; };
+		5484E9511E8111FD00D49209 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5484E9501E8111FD00D49209 /* libsqlite3.tbd */; };
+		5484E9571E8116AE00D49209 /* WXHongBaoReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5484E9551E8116AE00D49209 /* WXHongBaoReporter.h */; };
+		5484E9581E8116AE00D49209 /* WXHongBaoReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5484E9561E8116AE00D49209 /* WXHongBaoReporter.m */; };
+		54FEA9481E7A57C700A86433 /* WeChatRedEnvelopParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9121E7A57C700A86433 /* WeChatRedEnvelopParam.h */; };
+		54FEA9491E7A57C700A86433 /* WeChatRedEnvelopParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9131E7A57C700A86433 /* WeChatRedEnvelopParam.m */; };
+		54FEA94A1E7A57C700A86433 /* WXHongBaoIPCCmdMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9141E7A57C700A86433 /* WXHongBaoIPCCmdMgr.h */; };
+		54FEA94B1E7A57C700A86433 /* WXHongBaoIPCCmdMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9151E7A57C700A86433 /* WXHongBaoIPCCmdMgr.m */; };
+		54FEA94C1E7A57C700A86433 /* WXHongBaoMessageListMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9161E7A57C700A86433 /* WXHongBaoMessageListMgr.h */; };
+		54FEA94D1E7A57C700A86433 /* WXHongBaoMessageListMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9171E7A57C700A86433 /* WXHongBaoMessageListMgr.m */; };
+		54FEA94E1E7A57C700A86433 /* WXHongBaoOpeartionMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9181E7A57C700A86433 /* WXHongBaoOpeartionMgr.h */; };
+		54FEA94F1E7A57C700A86433 /* WXHongBaoOpeartionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9191E7A57C700A86433 /* WXHongBaoOpeartionMgr.m */; };
+		54FEA9501E7A57C700A86433 /* WXHongBaoQueryTaskMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA91A1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.h */; };
+		54FEA9511E7A57C700A86433 /* WXHongBaoQueryTaskMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA91B1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.m */; };
+		54FEA9541E7A57C700A86433 /* CMessageMgrHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA91F1E7A57C700A86433 /* CMessageMgrHooker.h */; };
+		54FEA9551E7A57C700A86433 /* CMessageMgrHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9201E7A57C700A86433 /* CMessageMgrHooker.m */; };
+		54FEA9561E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9211E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.h */; };
+		54FEA9571E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9221E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.m */; };
+		54FEA9581E7A57C700A86433 /* NewSettingViewControllerHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9231E7A57C700A86433 /* NewSettingViewControllerHooker.h */; };
+		54FEA9591E7A57C700A86433 /* NewSettingViewControllerHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9241E7A57C700A86433 /* NewSettingViewControllerHooker.m */; };
+		54FEA95A1E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9251E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.h */; };
+		54FEA95B1E7A57C800A86433 /* WCRedEnvelopesLogicMgrHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9261E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.m */; };
+		54FEA95C1E7A57C800A86433 /* WeChatCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9271E7A57C700A86433 /* WeChatCommonDefine.h */; };
+		54FEA95D1E7A57C800A86433 /* WeChatCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9281E7A57C700A86433 /* WeChatCommonDefine.m */; };
+		54FEA95E1E7A57C800A86433 /* WeChatHookSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9291E7A57C700A86433 /* WeChatHookSDK.h */; };
+		54FEA95F1E7A57C800A86433 /* WeChatHookSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA92A1E7A57C700A86433 /* WeChatHookSDK.m */; };
+		54FEA9601E7A57C800A86433 /* WeChatRedEnvelop.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA92C1E7A57C700A86433 /* WeChatRedEnvelop.h */; };
+		54FEA9A71E7A6F5300A86433 /* UIColor+HKHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FEA9A51E7A6F5300A86433 /* UIColor+HKHexString.h */; };
+		54FEA9A81E7A6F5300A86433 /* UIColor+HKHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEA9A61E7A6F5300A86433 /* UIColor+HKHexString.m */; };
+		54FEA9AA1E7A6F8C00A86433 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FEA9A91E7A6F8C00A86433 /* CoreGraphics.framework */; };
+		DA0109FD1E7405C200548179 /* NSDictionary+HKPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0109FB1E7405C200548179 /* NSDictionary+HKPrint.h */; };
+		DA0109FE1E7405C200548179 /* NSDictionary+HKPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0109FC1E7405C200548179 /* NSDictionary+HKPrint.m */; };
+		DA010A241E740D0100548179 /* NSObject+HKPerformSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = DA010A221E740D0100548179 /* NSObject+HKPerformSelector.h */; };
+		DA010A251E740D0100548179 /* NSObject+HKPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = DA010A231E740D0100548179 /* NSObject+HKPerformSelector.m */; };
+		DA010A291E74183E00548179 /* NSObject+HKMethodSwizzed.h in Headers */ = {isa = PBXBuildFile; fileRef = DA010A271E74183E00548179 /* NSObject+HKMethodSwizzed.h */; };
+		DA010A2A1E74183E00548179 /* NSObject+HKMethodSwizzed.m in Sources */ = {isa = PBXBuildFile; fileRef = DA010A281E74183E00548179 /* NSObject+HKMethodSwizzed.m */; };
+		DA010B071E744DF400548179 /* NSObject+HKInstanceVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = DA010B051E744DF400548179 /* NSObject+HKInstanceVariable.h */; };
+		DA010B081E744DF400548179 /* NSObject+HKInstanceVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = DA010B061E744DF400548179 /* NSObject+HKInstanceVariable.m */; };
+		DA010B361E75ADF200548179 /* NSDictionary+HKURL.h in Headers */ = {isa = PBXBuildFile; fileRef = DA010B341E75ADF200548179 /* NSDictionary+HKURL.h */; };
+		DA010B371E75ADF200548179 /* NSDictionary+HKURL.m in Sources */ = {isa = PBXBuildFile; fileRef = DA010B351E75ADF200548179 /* NSDictionary+HKURL.m */; };
+		DA21B3551EA7B799006B4086 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA21B3541EA7B799006B4086 /* AVFoundation.framework */; };
+		DA21B3571EA7B869006B4086 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA21B3561EA7B869006B4086 /* AudioToolbox.framework */; };
+		DA4FAD3F1E9CD018008374C5 /* WXHongBaoHitRuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4FAD391E9CD018008374C5 /* WXHongBaoHitRuleHandler.h */; };
+		DA4FAD401E9CD018008374C5 /* WXHongBaoHitRuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4FAD3A1E9CD018008374C5 /* WXHongBaoHitRuleHandler.m */; };
+		DA4FAD411E9CD018008374C5 /* WXHongBaoSmallRuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4FAD3B1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.h */; };
+		DA4FAD421E9CD018008374C5 /* WXHongBaoSmallRuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4FAD3C1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.m */; };
+		DA4FAD431E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4FAD3D1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.h */; };
+		DA4FAD441E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4FAD3E1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.m */; };
+		DA4FAD471E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4FAD451E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.h */; };
+		DA4FAD481E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4FAD461E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.m */; };
+		DA8A14221E93919D003DB414 /* WXAutoChangeMyInfoMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8A14201E93919D003DB414 /* WXAutoChangeMyInfoMgr.h */; };
+		DA8A14231E93919D003DB414 /* WXAutoChangeMyInfoMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A14211E93919D003DB414 /* WXAutoChangeMyInfoMgr.m */; };
+		DA9CB5DB1E90E670001CE923 /* UIApplication+TopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9CB5D91E90E670001CE923 /* UIApplication+TopViewController.h */; };
+		DA9CB5DC1E90E670001CE923 /* UIApplication+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CB5DA1E90E670001CE923 /* UIApplication+TopViewController.m */; };
+		DAB8330A1EA77DD1000FAE4E /* HKAsynTickoutTask.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB833081EA77DD1000FAE4E /* HKAsynTickoutTask.h */; };
+		DAB8330B1EA77DD1000FAE4E /* HKAsynTickoutTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB833091EA77DD1000FAE4E /* HKAsynTickoutTask.m */; };
+		DAB8330E1EA77DDC000FAE4E /* NSTimer+HKBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB8330C1EA77DDC000FAE4E /* NSTimer+HKBlock.h */; };
+		DAB8330F1EA77DDC000FAE4E /* NSTimer+HKBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8330D1EA77DDC000FAE4E /* NSTimer+HKBlock.m */; };
+		DAB8650E1E7E6D330053EECF /* HKTCPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB8650A1E7E6D330053EECF /* HKTCPClient.h */; };
+		DAB8650F1E7E6D330053EECF /* HKTCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8650B1E7E6D330053EECF /* HKTCPClient.m */; };
+		DAB865101E7E6D330053EECF /* HKTCPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB8650C1E7E6D330053EECF /* HKTCPServer.h */; };
+		DAB865111E7E6D330053EECF /* HKTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8650D1E7E6D330053EECF /* HKTCPServer.m */; };
+		DAB865131E7E6FBF0053EECF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB865121E7E6FBF0053EECF /* CFNetwork.framework */; };
+		DAB865151E7E6FE70053EECF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB865141E7E6FE70053EECF /* Security.framework */; };
+		DAB8998F1E7CE78600EEDE8C /* NSString+HKSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB8998D1E7CE78600EEDE8C /* NSString+HKSearch.h */; };
+		DAB899901E7CE78600EEDE8C /* NSString+HKSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8998E1E7CE78600EEDE8C /* NSString+HKSearch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		544368121E72A6E700F5989C /* NSObject+HSClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HSClassInfo.h"; sourceTree = "<group>"; };
+		544368131E72A6E700F5989C /* NSObject+HSClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HSClassInfo.m"; sourceTree = "<group>"; };
+		544368211E72A86700F5989C /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
+		544368231E72A90B00F5989C /* HKCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKCommonDefine.h; sourceTree = "<group>"; };
+		544368241E72A90B00F5989C /* HKCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKCommonDefine.m; sourceTree = "<group>"; };
+		544460C51E7BD11200180767 /* HKHttpDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKHttpDownloadCache.h; sourceTree = "<group>"; };
+		544460C61E7BD11200180767 /* HKHttpDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKHttpDownloadCache.m; sourceTree = "<group>"; };
+		544460C71E7BD11200180767 /* HKHttpDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKHttpDownloader.h; sourceTree = "<group>"; };
+		544460C81E7BD11200180767 /* HKHttpDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKHttpDownloader.m; sourceTree = "<group>"; };
+		544460C91E7BD11200180767 /* HKAppAuthorizationMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAppAuthorizationMgr.h; sourceTree = "<group>"; };
+		544460CA1E7BD11200180767 /* HKAppAuthorizationMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAppAuthorizationMgr.m; sourceTree = "<group>"; };
+		544460CB1E7BD11200180767 /* HKTicktockTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTicktockTask.h; sourceTree = "<group>"; };
+		544460CC1E7BD11200180767 /* HKTicktockTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTicktockTask.m; sourceTree = "<group>"; };
+		544460CF1E7BD11200180767 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		544460D01E7BD11200180767 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		5450D58D1E728BF800048798 /* libHookSDK.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHookSDK.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5450D5901E728BF800048798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5450D5921E728BF800048798 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5450D5971E728BF800048798 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		5450D5981E728BF800048798 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		5450D59A1E728BF800048798 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		5450D59B1E728BF800048798 /* HookSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HookSDK-Prefix.pch"; sourceTree = "<group>"; };
+		5450D59E1E728BF800048798 /* HookSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookSDK.m; sourceTree = "<group>"; };
+		5450D5A21E728BF800048798 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		545393D51E8E8D0F007209F8 /* WXHongBaoAssistantMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoAssistantMenu.h; sourceTree = "<group>"; };
+		545393D61E8E8D0F007209F8 /* WXHongBaoAssistantMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoAssistantMenu.m; sourceTree = "<group>"; };
+		545393D71E8E8D0F007209F8 /* WXHongBaoAssistantWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoAssistantWindow.h; sourceTree = "<group>"; };
+		545393D81E8E8D0F007209F8 /* WXHongBaoAssistantWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoAssistantWindow.m; sourceTree = "<group>"; };
+		545393D91E8E8D0F007209F8 /* WXHongBaoLogWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoLogWindow.h; sourceTree = "<group>"; };
+		545393DA1E8E8D0F007209F8 /* WXHongBaoLogWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoLogWindow.m; sourceTree = "<group>"; };
+		545393DE1E8E8D0F007209F8 /* WXHongBaoRuleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoRuleHandler.h; sourceTree = "<group>"; };
+		545393DF1E8E8D0F007209F8 /* WXHongBaoRuleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoRuleHandler.m; sourceTree = "<group>"; };
+		545393E01E8E8D0F007209F8 /* WXHongBaoRuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoRuleManager.h; sourceTree = "<group>"; };
+		545393E11E8E8D0F007209F8 /* WXHongBaoRuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoRuleManager.m; sourceTree = "<group>"; };
+		545393E21E8E8D0F007209F8 /* WXHongBaoRuleUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoRuleUtility.h; sourceTree = "<group>"; };
+		545393E31E8E8D0F007209F8 /* WXHongBaoRuleUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoRuleUtility.m; sourceTree = "<group>"; };
+		545393E41E8E8D0F007209F8 /* WXHongBaoTitleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoTitleInfo.h; sourceTree = "<group>"; };
+		545393E51E8E8D0F007209F8 /* WXHongBaoTitleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoTitleInfo.m; sourceTree = "<group>"; };
+		545393E81E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoHitConfigViewController.h; sourceTree = "<group>"; };
+		545393E91E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoHitConfigViewController.m; sourceTree = "<group>"; };
+		545393EA1E8E8D0F007209F8 /* HKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAlertView.h; sourceTree = "<group>"; };
+		545393EB1E8E8D0F007209F8 /* HKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAlertView.m; sourceTree = "<group>"; };
+		545393EC1E8E8D0F007209F8 /* HKAppearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAppearViewController.h; sourceTree = "<group>"; };
+		545393ED1E8E8D0F007209F8 /* HKAppearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAppearViewController.m; sourceTree = "<group>"; };
+		545393EE1E8E8D0F007209F8 /* WXHongBaoSettingMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSettingMgr.h; sourceTree = "<group>"; };
+		545393EF1E8E8D0F007209F8 /* WXHongBaoSettingMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSettingMgr.m; sourceTree = "<group>"; };
+		545393F01E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSettingTextViewController.h; sourceTree = "<group>"; };
+		545393F11E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSettingTextViewController.m; sourceTree = "<group>"; };
+		545393F21E8E8D0F007209F8 /* WXHongBaoSettingViewController..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSettingViewController..m; sourceTree = "<group>"; };
+		545393F31E8E8D0F007209F8 /* WXHongBaoSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSettingViewController.h; sourceTree = "<group>"; };
+		545394101E8E8D4A007209F8 /* NSData+HKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HKCache.h"; sourceTree = "<group>"; };
+		545394111E8E8D4A007209F8 /* NSData+HKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HKCache.m"; sourceTree = "<group>"; };
+		545394AA1E8E9B51007209F8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		545394AB1E8E9B51007209F8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		545394AC1E8E9B51007209F8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		545394AD1E8E9B51007209F8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		545394D11E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSmallConfigViewController.h; sourceTree = "<group>"; };
+		545394D21E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSmallConfigViewController.m; sourceTree = "<group>"; };
+		5484E94A1E8111C300D49209 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = Libs/UMMobClick.framework; sourceTree = "<group>"; };
+		5484E94C1E8111E000D49209 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5484E94E1E8111F000D49209 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5484E9501E8111FD00D49209 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5484E9551E8116AE00D49209 /* WXHongBaoReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoReporter.h; sourceTree = "<group>"; };
+		5484E9561E8116AE00D49209 /* WXHongBaoReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoReporter.m; sourceTree = "<group>"; };
+		54FEA9121E7A57C700A86433 /* WeChatRedEnvelopParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelopParam.h; sourceTree = "<group>"; };
+		54FEA9131E7A57C700A86433 /* WeChatRedEnvelopParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatRedEnvelopParam.m; sourceTree = "<group>"; };
+		54FEA9141E7A57C700A86433 /* WXHongBaoIPCCmdMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoIPCCmdMgr.h; sourceTree = "<group>"; };
+		54FEA9151E7A57C700A86433 /* WXHongBaoIPCCmdMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoIPCCmdMgr.m; sourceTree = "<group>"; };
+		54FEA9161E7A57C700A86433 /* WXHongBaoMessageListMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoMessageListMgr.h; sourceTree = "<group>"; };
+		54FEA9171E7A57C700A86433 /* WXHongBaoMessageListMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoMessageListMgr.m; sourceTree = "<group>"; };
+		54FEA9181E7A57C700A86433 /* WXHongBaoOpeartionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoOpeartionMgr.h; sourceTree = "<group>"; };
+		54FEA9191E7A57C700A86433 /* WXHongBaoOpeartionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoOpeartionMgr.m; sourceTree = "<group>"; };
+		54FEA91A1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoQueryTaskMgr.h; sourceTree = "<group>"; };
+		54FEA91B1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoQueryTaskMgr.m; sourceTree = "<group>"; };
+		54FEA91F1E7A57C700A86433 /* CMessageMgrHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMessageMgrHooker.h; sourceTree = "<group>"; };
+		54FEA9201E7A57C700A86433 /* CMessageMgrHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMessageMgrHooker.m; sourceTree = "<group>"; };
+		54FEA9211E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroMessengerAppDelegateWXHooker.h; sourceTree = "<group>"; };
+		54FEA9221E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroMessengerAppDelegateWXHooker.m; sourceTree = "<group>"; };
+		54FEA9231E7A57C700A86433 /* NewSettingViewControllerHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSettingViewControllerHooker.h; sourceTree = "<group>"; };
+		54FEA9241E7A57C700A86433 /* NewSettingViewControllerHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSettingViewControllerHooker.m; sourceTree = "<group>"; };
+		54FEA9251E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRedEnvelopesLogicMgrHooker.h; sourceTree = "<group>"; };
+		54FEA9261E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCRedEnvelopesLogicMgrHooker.m; sourceTree = "<group>"; };
+		54FEA9271E7A57C700A86433 /* WeChatCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatCommonDefine.h; sourceTree = "<group>"; };
+		54FEA9281E7A57C700A86433 /* WeChatCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatCommonDefine.m; sourceTree = "<group>"; };
+		54FEA9291E7A57C700A86433 /* WeChatHookSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatHookSDK.h; sourceTree = "<group>"; };
+		54FEA92A1E7A57C700A86433 /* WeChatHookSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatHookSDK.m; sourceTree = "<group>"; };
+		54FEA92C1E7A57C700A86433 /* WeChatRedEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatRedEnvelop.h; sourceTree = "<group>"; };
+		54FEA9A51E7A6F5300A86433 /* UIColor+HKHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HKHexString.h"; sourceTree = "<group>"; };
+		54FEA9A61E7A6F5300A86433 /* UIColor+HKHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HKHexString.m"; sourceTree = "<group>"; };
+		54FEA9A91E7A6F8C00A86433 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA0109FB1E7405C200548179 /* NSDictionary+HKPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HKPrint.h"; sourceTree = "<group>"; };
+		DA0109FC1E7405C200548179 /* NSDictionary+HKPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HKPrint.m"; sourceTree = "<group>"; };
+		DA010A221E740D0100548179 /* NSObject+HKPerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HKPerformSelector.h"; sourceTree = "<group>"; };
+		DA010A231E740D0100548179 /* NSObject+HKPerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HKPerformSelector.m"; sourceTree = "<group>"; };
+		DA010A271E74183E00548179 /* NSObject+HKMethodSwizzed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HKMethodSwizzed.h"; sourceTree = "<group>"; };
+		DA010A281E74183E00548179 /* NSObject+HKMethodSwizzed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HKMethodSwizzed.m"; sourceTree = "<group>"; };
+		DA010B051E744DF400548179 /* NSObject+HKInstanceVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HKInstanceVariable.h"; sourceTree = "<group>"; };
+		DA010B061E744DF400548179 /* NSObject+HKInstanceVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HKInstanceVariable.m"; sourceTree = "<group>"; };
+		DA010B341E75ADF200548179 /* NSDictionary+HKURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HKURL.h"; sourceTree = "<group>"; };
+		DA010B351E75ADF200548179 /* NSDictionary+HKURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HKURL.m"; sourceTree = "<group>"; };
+		DA21B3541EA7B799006B4086 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DA21B3561EA7B869006B4086 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DA4FAD391E9CD018008374C5 /* WXHongBaoHitRuleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoHitRuleHandler.h; sourceTree = "<group>"; };
+		DA4FAD3A1E9CD018008374C5 /* WXHongBaoHitRuleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoHitRuleHandler.m; sourceTree = "<group>"; };
+		DA4FAD3B1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSmallRuleHandler.h; sourceTree = "<group>"; };
+		DA4FAD3C1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSmallRuleHandler.m; sourceTree = "<group>"; };
+		DA4FAD3D1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSmartOpenRuleHandler.h; sourceTree = "<group>"; };
+		DA4FAD3E1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSmartOpenRuleHandler.m; sourceTree = "<group>"; };
+		DA4FAD451E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHongBaoSmartOpenConfigViewController.h; sourceTree = "<group>"; };
+		DA4FAD461E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHongBaoSmartOpenConfigViewController.m; sourceTree = "<group>"; };
+		DA8A14201E93919D003DB414 /* WXAutoChangeMyInfoMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAutoChangeMyInfoMgr.h; sourceTree = "<group>"; };
+		DA8A14211E93919D003DB414 /* WXAutoChangeMyInfoMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAutoChangeMyInfoMgr.m; sourceTree = "<group>"; };
+		DA9CB5D91E90E670001CE923 /* UIApplication+TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopViewController.h"; sourceTree = "<group>"; };
+		DA9CB5DA1E90E670001CE923 /* UIApplication+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopViewController.m"; sourceTree = "<group>"; };
+		DAB833081EA77DD1000FAE4E /* HKAsynTickoutTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAsynTickoutTask.h; sourceTree = "<group>"; };
+		DAB833091EA77DD1000FAE4E /* HKAsynTickoutTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAsynTickoutTask.m; sourceTree = "<group>"; };
+		DAB8330C1EA77DDC000FAE4E /* NSTimer+HKBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HKBlock.h"; sourceTree = "<group>"; };
+		DAB8330D1EA77DDC000FAE4E /* NSTimer+HKBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HKBlock.m"; sourceTree = "<group>"; };
+		DAB8650A1E7E6D330053EECF /* HKTCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTCPClient.h; sourceTree = "<group>"; };
+		DAB8650B1E7E6D330053EECF /* HKTCPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTCPClient.m; sourceTree = "<group>"; };
+		DAB8650C1E7E6D330053EECF /* HKTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTCPServer.h; sourceTree = "<group>"; };
+		DAB8650D1E7E6D330053EECF /* HKTCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTCPServer.m; sourceTree = "<group>"; };
+		DAB865121E7E6FBF0053EECF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DAB865141E7E6FE70053EECF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DAB8998D1E7CE78600EEDE8C /* NSString+HKSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HKSearch.h"; sourceTree = "<group>"; };
+		DAB8998E1E7CE78600EEDE8C /* NSString+HKSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HKSearch.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5450D5891E728BF800048798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA21B3571EA7B869006B4086 /* AudioToolbox.framework in Frameworks */,
+				DA21B3551EA7B799006B4086 /* AVFoundation.framework in Frameworks */,
+				5484E9511E8111FD00D49209 /* libsqlite3.tbd in Frameworks */,
+				5484E94F1E8111F000D49209 /* libz.tbd in Frameworks */,
+				5484E94D1E8111E000D49209 /* CoreTelephony.framework in Frameworks */,
+				DAB865151E7E6FE70053EECF /* Security.framework in Frameworks */,
+				DAB865131E7E6FBF0053EECF /* CFNetwork.framework in Frameworks */,
+				54FEA9AA1E7A6F8C00A86433 /* CoreGraphics.framework in Frameworks */,
+				5450D5911E728BF800048798 /* Foundation.framework in Frameworks */,
+				5450D5931E728BF800048798 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544368111E72A6E700F5989C /* HookFouncation */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8330C1EA77DDC000FAE4E /* NSTimer+HKBlock.h */,
+				DAB8330D1EA77DDC000FAE4E /* NSTimer+HKBlock.m */,
+				DA9CB5D91E90E670001CE923 /* UIApplication+TopViewController.h */,
+				DA9CB5DA1E90E670001CE923 /* UIApplication+TopViewController.m */,
+				545394101E8E8D4A007209F8 /* NSData+HKCache.h */,
+				545394111E8E8D4A007209F8 /* NSData+HKCache.m */,
+				54FEA9A51E7A6F5300A86433 /* UIColor+HKHexString.h */,
+				54FEA9A61E7A6F5300A86433 /* UIColor+HKHexString.m */,
+				544368211E72A86700F5989C /* CaptainHook.h */,
+				544368121E72A6E700F5989C /* NSObject+HSClassInfo.h */,
+				544368131E72A6E700F5989C /* NSObject+HSClassInfo.m */,
+				544368231E72A90B00F5989C /* HKCommonDefine.h */,
+				544368241E72A90B00F5989C /* HKCommonDefine.m */,
+				DA0109FB1E7405C200548179 /* NSDictionary+HKPrint.h */,
+				DA0109FC1E7405C200548179 /* NSDictionary+HKPrint.m */,
+				DA010A221E740D0100548179 /* NSObject+HKPerformSelector.h */,
+				DA010A231E740D0100548179 /* NSObject+HKPerformSelector.m */,
+				DA010A271E74183E00548179 /* NSObject+HKMethodSwizzed.h */,
+				DA010A281E74183E00548179 /* NSObject+HKMethodSwizzed.m */,
+				DA010B051E744DF400548179 /* NSObject+HKInstanceVariable.h */,
+				DA010B061E744DF400548179 /* NSObject+HKInstanceVariable.m */,
+				DA010B341E75ADF200548179 /* NSDictionary+HKURL.h */,
+				DA010B351E75ADF200548179 /* NSDictionary+HKURL.m */,
+				DAB8998D1E7CE78600EEDE8C /* NSString+HKSearch.h */,
+				DAB8998E1E7CE78600EEDE8C /* NSString+HKSearch.m */,
+			);
+			path = HookFouncation;
+			sourceTree = "<group>";
+		};
+		544460C31E7BD11200180767 /* HookKit */ = {
+			isa = PBXGroup;
+			children = (
+				DAB833081EA77DD1000FAE4E /* HKAsynTickoutTask.h */,
+				DAB833091EA77DD1000FAE4E /* HKAsynTickoutTask.m */,
+				545394A91E8E9B51007209F8 /* CocoaAsyncSocket */,
+				DAB865091E7E6D330053EECF /* HKTCP */,
+				544460C41E7BD11200180767 /* Downloader */,
+				544460C91E7BD11200180767 /* HKAppAuthorizationMgr.h */,
+				544460CA1E7BD11200180767 /* HKAppAuthorizationMgr.m */,
+				544460CB1E7BD11200180767 /* HKTicktockTask.h */,
+				544460CC1E7BD11200180767 /* HKTicktockTask.m */,
+				544460CD1E7BD11200180767 /* JSONKit */,
+			);
+			path = HookKit;
+			sourceTree = "<group>";
+		};
+		544460C41E7BD11200180767 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				544460C51E7BD11200180767 /* HKHttpDownloadCache.h */,
+				544460C61E7BD11200180767 /* HKHttpDownloadCache.m */,
+				544460C71E7BD11200180767 /* HKHttpDownloader.h */,
+				544460C81E7BD11200180767 /* HKHttpDownloader.m */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		544460CD1E7BD11200180767 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				544460CF1E7BD11200180767 /* JSONKit.h */,
+				544460D01E7BD11200180767 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		5450D5831E728BF800048798 = {
+			isa = PBXGroup;
+			children = (
+				5450D5941E728BF800048798 /* HookSDK */,
+				5450D58F1E728BF800048798 /* Frameworks */,
+				5450D58E1E728BF800048798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5450D58E1E728BF800048798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5450D58D1E728BF800048798 /* libHookSDK.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5450D58F1E728BF800048798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA21B3561EA7B869006B4086 /* AudioToolbox.framework */,
+				DA21B3541EA7B799006B4086 /* AVFoundation.framework */,
+				5484E9501E8111FD00D49209 /* libsqlite3.tbd */,
+				5484E94E1E8111F000D49209 /* libz.tbd */,
+				5484E94C1E8111E000D49209 /* CoreTelephony.framework */,
+				5484E94A1E8111C300D49209 /* UMMobClick.framework */,
+				DAB865141E7E6FE70053EECF /* Security.framework */,
+				DAB865121E7E6FBF0053EECF /* CFNetwork.framework */,
+				54FEA9A91E7A6F8C00A86433 /* CoreGraphics.framework */,
+				5450D5901E728BF800048798 /* Foundation.framework */,
+				5450D5921E728BF800048798 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5450D5941E728BF800048798 /* HookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				54FEA8F21E7A57C700A86433 /* Businesses */,
+				544460C31E7BD11200180767 /* HookKit */,
+				544368111E72A6E700F5989C /* HookFouncation */,
+				5450D59E1E728BF800048798 /* HookSDK.m */,
+				5450D5951E728BF800048798 /* Package */,
+				5450D5991E728BF800048798 /* Supporting Files */,
+			);
+			path = HookSDK;
+			sourceTree = "<group>";
+		};
+		5450D5951E728BF800048798 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				5450D5961E728BF800048798 /* DEBIAN */,
+				5450D5A01E728BF800048798 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		5450D5961E728BF800048798 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				5450D5971E728BF800048798 /* control.txt */,
+				5450D5981E728BF800048798 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		5450D5991E728BF800048798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5450D59A1E728BF800048798 /* PackageVersion.plist */,
+				5450D59B1E728BF800048798 /* HookSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5450D5A01E728BF800048798 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				5450D5A11E728BF800048798 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		5450D5A11E728BF800048798 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5450D5A21E728BF800048798 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		545393D41E8E8D0F007209F8 /* Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				545393D51E8E8D0F007209F8 /* WXHongBaoAssistantMenu.h */,
+				545393D61E8E8D0F007209F8 /* WXHongBaoAssistantMenu.m */,
+				545393D71E8E8D0F007209F8 /* WXHongBaoAssistantWindow.h */,
+				545393D81E8E8D0F007209F8 /* WXHongBaoAssistantWindow.m */,
+				545393D91E8E8D0F007209F8 /* WXHongBaoLogWindow.h */,
+				545393DA1E8E8D0F007209F8 /* WXHongBaoLogWindow.m */,
+			);
+			path = Assistant;
+			sourceTree = "<group>";
+		};
+		545393DB1E8E8D0F007209F8 /* RuleHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DA4FAD381E9CD018008374C5 /* Handler */,
+				545393DE1E8E8D0F007209F8 /* WXHongBaoRuleHandler.h */,
+				545393DF1E8E8D0F007209F8 /* WXHongBaoRuleHandler.m */,
+				545393E01E8E8D0F007209F8 /* WXHongBaoRuleManager.h */,
+				545393E11E8E8D0F007209F8 /* WXHongBaoRuleManager.m */,
+				545393E21E8E8D0F007209F8 /* WXHongBaoRuleUtility.h */,
+				545393E31E8E8D0F007209F8 /* WXHongBaoRuleUtility.m */,
+				545393E41E8E8D0F007209F8 /* WXHongBaoTitleInfo.h */,
+				545393E51E8E8D0F007209F8 /* WXHongBaoTitleInfo.m */,
+			);
+			path = RuleHandler;
+			sourceTree = "<group>";
+		};
+		545393E61E8E8D0F007209F8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				545393E71E8E8D0F007209F8 /* config */,
+				545393EA1E8E8D0F007209F8 /* HKAlertView.h */,
+				545393EB1E8E8D0F007209F8 /* HKAlertView.m */,
+				545393EC1E8E8D0F007209F8 /* HKAppearViewController.h */,
+				545393ED1E8E8D0F007209F8 /* HKAppearViewController.m */,
+				545393EE1E8E8D0F007209F8 /* WXHongBaoSettingMgr.h */,
+				545393EF1E8E8D0F007209F8 /* WXHongBaoSettingMgr.m */,
+				545393F01E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.h */,
+				545393F11E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.m */,
+				545393F21E8E8D0F007209F8 /* WXHongBaoSettingViewController..m */,
+				545393F31E8E8D0F007209F8 /* WXHongBaoSettingViewController.h */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		545393E71E8E8D0F007209F8 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				DA4FAD451E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.h */,
+				DA4FAD461E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.m */,
+				545394D11E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.h */,
+				545394D21E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.m */,
+				545393E81E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.h */,
+				545393E91E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		545394A91E8E9B51007209F8 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				545394AA1E8E9B51007209F8 /* .gitignore */,
+				545394AB1E8E9B51007209F8 /* .travis.yml */,
+				545394AC1E8E9B51007209F8 /* GCDAsyncSocket.h */,
+				545394AD1E8E9B51007209F8 /* GCDAsyncSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		54FEA8F21E7A57C700A86433 /* Businesses */ = {
+			isa = PBXGroup;
+			children = (
+				54FEA8F31E7A57C700A86433 /* WeChat */,
+			);
+			path = Businesses;
+			sourceTree = "<group>";
+		};
+		54FEA8F31E7A57C700A86433 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				54FEA9081E7A57C700A86433 /* HongBao */,
+				54FEA91E1E7A57C700A86433 /* Hooker */,
+				54FEA9271E7A57C700A86433 /* WeChatCommonDefine.h */,
+				54FEA9281E7A57C700A86433 /* WeChatCommonDefine.m */,
+				54FEA9291E7A57C700A86433 /* WeChatHookSDK.h */,
+				54FEA92A1E7A57C700A86433 /* WeChatHookSDK.m */,
+				54FEA92B1E7A57C700A86433 /* WXHeader */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		54FEA9081E7A57C700A86433 /* HongBao */ = {
+			isa = PBXGroup;
+			children = (
+				545393D41E8E8D0F007209F8 /* Assistant */,
+				545393DB1E8E8D0F007209F8 /* RuleHandler */,
+				545393E61E8E8D0F007209F8 /* Setting */,
+				DA8A14201E93919D003DB414 /* WXAutoChangeMyInfoMgr.h */,
+				DA8A14211E93919D003DB414 /* WXAutoChangeMyInfoMgr.m */,
+				5484E9551E8116AE00D49209 /* WXHongBaoReporter.h */,
+				5484E9561E8116AE00D49209 /* WXHongBaoReporter.m */,
+				54FEA9121E7A57C700A86433 /* WeChatRedEnvelopParam.h */,
+				54FEA9131E7A57C700A86433 /* WeChatRedEnvelopParam.m */,
+				54FEA9141E7A57C700A86433 /* WXHongBaoIPCCmdMgr.h */,
+				54FEA9151E7A57C700A86433 /* WXHongBaoIPCCmdMgr.m */,
+				54FEA9161E7A57C700A86433 /* WXHongBaoMessageListMgr.h */,
+				54FEA9171E7A57C700A86433 /* WXHongBaoMessageListMgr.m */,
+				54FEA9181E7A57C700A86433 /* WXHongBaoOpeartionMgr.h */,
+				54FEA9191E7A57C700A86433 /* WXHongBaoOpeartionMgr.m */,
+				54FEA91A1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.h */,
+				54FEA91B1E7A57C700A86433 /* WXHongBaoQueryTaskMgr.m */,
+			);
+			path = HongBao;
+			sourceTree = "<group>";
+		};
+		54FEA91E1E7A57C700A86433 /* Hooker */ = {
+			isa = PBXGroup;
+			children = (
+				54FEA91F1E7A57C700A86433 /* CMessageMgrHooker.h */,
+				54FEA9201E7A57C700A86433 /* CMessageMgrHooker.m */,
+				54FEA9211E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.h */,
+				54FEA9221E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.m */,
+				54FEA9231E7A57C700A86433 /* NewSettingViewControllerHooker.h */,
+				54FEA9241E7A57C700A86433 /* NewSettingViewControllerHooker.m */,
+				54FEA9251E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.h */,
+				54FEA9261E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.m */,
+			);
+			path = Hooker;
+			sourceTree = "<group>";
+		};
+		54FEA92B1E7A57C700A86433 /* WXHeader */ = {
+			isa = PBXGroup;
+			children = (
+				54FEA92C1E7A57C700A86433 /* WeChatRedEnvelop.h */,
+			);
+			path = WXHeader;
+			sourceTree = "<group>";
+		};
+		DA4FAD381E9CD018008374C5 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				DA4FAD391E9CD018008374C5 /* WXHongBaoHitRuleHandler.h */,
+				DA4FAD3A1E9CD018008374C5 /* WXHongBaoHitRuleHandler.m */,
+				DA4FAD3B1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.h */,
+				DA4FAD3C1E9CD018008374C5 /* WXHongBaoSmallRuleHandler.m */,
+				DA4FAD3D1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.h */,
+				DA4FAD3E1E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		DAB865091E7E6D330053EECF /* HKTCP */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8650A1E7E6D330053EECF /* HKTCPClient.h */,
+				DAB8650B1E7E6D330053EECF /* HKTCPClient.m */,
+				DAB8650C1E7E6D330053EECF /* HKTCPServer.h */,
+				DAB8650D1E7E6D330053EECF /* HKTCPServer.m */,
+			);
+			path = HKTCP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5450D58A1E728BF800048798 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545393F61E8E8D0F007209F8 /* WXHongBaoAssistantWindow.h in Headers */,
+				54FEA95C1E7A57C800A86433 /* WeChatCommonDefine.h in Headers */,
+				544460DB1E7BD11200180767 /* JSONKit.h in Headers */,
+				545394041E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.h in Headers */,
+				DA4FAD3F1E9CD018008374C5 /* WXHongBaoHitRuleHandler.h in Headers */,
+				54FEA9501E7A57C700A86433 /* WXHongBaoQueryTaskMgr.h in Headers */,
+				545394081E8E8D0F007209F8 /* HKAppearViewController.h in Headers */,
+				54FEA95E1E7A57C800A86433 /* WeChatHookSDK.h in Headers */,
+				544368251E72A90B00F5989C /* HKCommonDefine.h in Headers */,
+				544460D61E7BD11200180767 /* HKAppAuthorizationMgr.h in Headers */,
+				545394121E8E8D4A007209F8 /* NSData+HKCache.h in Headers */,
+				5453940C1E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.h in Headers */,
+				544460D81E7BD11200180767 /* HKTicktockTask.h in Headers */,
+				54FEA9541E7A57C700A86433 /* CMessageMgrHooker.h in Headers */,
+				DA010A291E74183E00548179 /* NSObject+HKMethodSwizzed.h in Headers */,
+				545393FE1E8E8D0F007209F8 /* WXHongBaoRuleManager.h in Headers */,
+				545394021E8E8D0F007209F8 /* WXHongBaoTitleInfo.h in Headers */,
+				544460D21E7BD11200180767 /* HKHttpDownloadCache.h in Headers */,
+				DA9CB5DB1E90E670001CE923 /* UIApplication+TopViewController.h in Headers */,
+				5453940F1E8E8D0F007209F8 /* WXHongBaoSettingViewController.h in Headers */,
+				545393F41E8E8D0F007209F8 /* WXHongBaoAssistantMenu.h in Headers */,
+				5453940A1E8E8D0F007209F8 /* WXHongBaoSettingMgr.h in Headers */,
+				DA010B071E744DF400548179 /* NSObject+HKInstanceVariable.h in Headers */,
+				54FEA9581E7A57C700A86433 /* NewSettingViewControllerHooker.h in Headers */,
+				54FEA95A1E7A57C700A86433 /* WCRedEnvelopesLogicMgrHooker.h in Headers */,
+				545394061E8E8D0F007209F8 /* HKAlertView.h in Headers */,
+				54FEA94C1E7A57C700A86433 /* WXHongBaoMessageListMgr.h in Headers */,
+				DA4FAD431E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.h in Headers */,
+				DA010B361E75ADF200548179 /* NSDictionary+HKURL.h in Headers */,
+				DA4FAD471E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.h in Headers */,
+				DA010A241E740D0100548179 /* NSObject+HKPerformSelector.h in Headers */,
+				54FEA9A71E7A6F5300A86433 /* UIColor+HKHexString.h in Headers */,
+				54FEA9561E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.h in Headers */,
+				544368221E72A86700F5989C /* CaptainHook.h in Headers */,
+				DAB8998F1E7CE78600EEDE8C /* NSString+HKSearch.h in Headers */,
+				5484E9571E8116AE00D49209 /* WXHongBaoReporter.h in Headers */,
+				DA8A14221E93919D003DB414 /* WXAutoChangeMyInfoMgr.h in Headers */,
+				DAB8650E1E7E6D330053EECF /* HKTCPClient.h in Headers */,
+				54FEA9601E7A57C800A86433 /* WeChatRedEnvelop.h in Headers */,
+				DA4FAD411E9CD018008374C5 /* WXHongBaoSmallRuleHandler.h in Headers */,
+				DA0109FD1E7405C200548179 /* NSDictionary+HKPrint.h in Headers */,
+				545394D31E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.h in Headers */,
+				54FEA94E1E7A57C700A86433 /* WXHongBaoOpeartionMgr.h in Headers */,
+				54FEA94A1E7A57C700A86433 /* WXHongBaoIPCCmdMgr.h in Headers */,
+				DAB865101E7E6D330053EECF /* HKTCPServer.h in Headers */,
+				DAB8330A1EA77DD1000FAE4E /* HKAsynTickoutTask.h in Headers */,
+				DAB8330E1EA77DDC000FAE4E /* NSTimer+HKBlock.h in Headers */,
+				544368141E72A6E700F5989C /* NSObject+HSClassInfo.h in Headers */,
+				545394001E8E8D0F007209F8 /* WXHongBaoRuleUtility.h in Headers */,
+				544460D41E7BD11200180767 /* HKHttpDownloader.h in Headers */,
+				54FEA9481E7A57C700A86433 /* WeChatRedEnvelopParam.h in Headers */,
+				545393F81E8E8D0F007209F8 /* WXHongBaoLogWindow.h in Headers */,
+				545394AE1E8E9B51007209F8 /* GCDAsyncSocket.h in Headers */,
+				545393FC1E8E8D0F007209F8 /* WXHongBaoRuleHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5450D58C1E728BF800048798 /* HookSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5450D5A51E728BF800048798 /* Build configuration list for PBXNativeTarget "HookSDK" */;
+			buildPhases = (
+				5450D5881E728BF800048798 /* Sources */,
+				5450D5891E728BF800048798 /* Frameworks */,
+				5450D58A1E728BF800048798 /* Headers */,
+				5450D58B1E728BF800048798 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HookSDK;
+			productName = HookSDK;
+			productReference = 5450D58D1E728BF800048798 /* libHookSDK.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5450D5841E728BF800048798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					5450D58C1E728BF800048798 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5450D5871E728BF800048798 /* Build configuration list for PBXProject "HookSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5450D5831E728BF800048798;
+			productRefGroup = 5450D58E1E728BF800048798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5450D58C1E728BF800048798 /* HookSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5450D58B1E728BF800048798 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5450D5881E728BF800048798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8A14231E93919D003DB414 /* WXAutoChangeMyInfoMgr.m in Sources */,
+				54FEA9591E7A57C700A86433 /* NewSettingViewControllerHooker.m in Sources */,
+				544460D51E7BD11200180767 /* HKHttpDownloader.m in Sources */,
+				DAB8330F1EA77DDC000FAE4E /* NSTimer+HKBlock.m in Sources */,
+				DA010B371E75ADF200548179 /* NSDictionary+HKURL.m in Sources */,
+				544368261E72A90B00F5989C /* HKCommonDefine.m in Sources */,
+				DA010A251E740D0100548179 /* NSObject+HKPerformSelector.m in Sources */,
+				DAB8330B1EA77DD1000FAE4E /* HKAsynTickoutTask.m in Sources */,
+				544460D91E7BD11200180767 /* HKTicktockTask.m in Sources */,
+				545394131E8E8D4A007209F8 /* NSData+HKCache.m in Sources */,
+				545394091E8E8D0F007209F8 /* HKAppearViewController.m in Sources */,
+				545394071E8E8D0F007209F8 /* HKAlertView.m in Sources */,
+				DAB899901E7CE78600EEDE8C /* NSString+HKSearch.m in Sources */,
+				544460DC1E7BD11200180767 /* JSONKit.m in Sources */,
+				DA4FAD401E9CD018008374C5 /* WXHongBaoHitRuleHandler.m in Sources */,
+				544460D31E7BD11200180767 /* HKHttpDownloadCache.m in Sources */,
+				545393FD1E8E8D0F007209F8 /* WXHongBaoRuleHandler.m in Sources */,
+				54FEA9571E7A57C700A86433 /* MicroMessengerAppDelegateWXHooker.m in Sources */,
+				54FEA9511E7A57C700A86433 /* WXHongBaoQueryTaskMgr.m in Sources */,
+				545393F51E8E8D0F007209F8 /* WXHongBaoAssistantMenu.m in Sources */,
+				5453940D1E8E8D0F007209F8 /* WXHongBaoSettingTextViewController.m in Sources */,
+				54FEA94F1E7A57C700A86433 /* WXHongBaoOpeartionMgr.m in Sources */,
+				54FEA9491E7A57C700A86433 /* WeChatRedEnvelopParam.m in Sources */,
+				545393FF1E8E8D0F007209F8 /* WXHongBaoRuleManager.m in Sources */,
+				54FEA94B1E7A57C700A86433 /* WXHongBaoIPCCmdMgr.m in Sources */,
+				54FEA94D1E7A57C700A86433 /* WXHongBaoMessageListMgr.m in Sources */,
+				DAB8650F1E7E6D330053EECF /* HKTCPClient.m in Sources */,
+				545394D41E8EAA6D007209F8 /* WXHongBaoSmallConfigViewController.m in Sources */,
+				5453940E1E8E8D0F007209F8 /* WXHongBaoSettingViewController..m in Sources */,
+				DA4FAD441E9CD018008374C5 /* WXHongBaoSmartOpenRuleHandler.m in Sources */,
+				5484E9581E8116AE00D49209 /* WXHongBaoReporter.m in Sources */,
+				DA0109FE1E7405C200548179 /* NSDictionary+HKPrint.m in Sources */,
+				545393F71E8E8D0F007209F8 /* WXHongBaoAssistantWindow.m in Sources */,
+				DA010B081E744DF400548179 /* NSObject+HKInstanceVariable.m in Sources */,
+				5453940B1E8E8D0F007209F8 /* WXHongBaoSettingMgr.m in Sources */,
+				545393F91E8E8D0F007209F8 /* WXHongBaoLogWindow.m in Sources */,
+				DA9CB5DC1E90E670001CE923 /* UIApplication+TopViewController.m in Sources */,
+				54FEA95F1E7A57C800A86433 /* WeChatHookSDK.m in Sources */,
+				5450D59F1E728BF800048798 /* HookSDK.m in Sources */,
+				DA010A2A1E74183E00548179 /* NSObject+HKMethodSwizzed.m in Sources */,
+				DA4FAD421E9CD018008374C5 /* WXHongBaoSmallRuleHandler.m in Sources */,
+				545394011E8E8D0F007209F8 /* WXHongBaoRuleUtility.m in Sources */,
+				545394AF1E8E9B51007209F8 /* GCDAsyncSocket.m in Sources */,
+				54FEA9A81E7A6F5300A86433 /* UIColor+HKHexString.m in Sources */,
+				54FEA95B1E7A57C800A86433 /* WCRedEnvelopesLogicMgrHooker.m in Sources */,
+				544368151E72A6E700F5989C /* NSObject+HSClassInfo.m in Sources */,
+				54FEA95D1E7A57C800A86433 /* WeChatCommonDefine.m in Sources */,
+				545394031E8E8D0F007209F8 /* WXHongBaoTitleInfo.m in Sources */,
+				544460D71E7BD11200180767 /* HKAppAuthorizationMgr.m in Sources */,
+				54FEA9551E7A57C700A86433 /* CMessageMgrHooker.m in Sources */,
+				DA4FAD481E9CD7F5008374C5 /* WXHongBaoSmartOpenConfigViewController.m in Sources */,
+				DAB865111E7E6D330053EECF /* HKTCPServer.m in Sources */,
+				545394051E8E8D0F007209F8 /* WXHongBaoHitConfigViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5450D5A31E728BF800048798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PROVISIONING_PROFILE = "696aedc0-eff2-494c-ae66-b4c04b874e56";
+				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		5450D5A41E728BF800048798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PROVISIONING_PROFILE = "696aedc0-eff2-494c-ae66-b4c04b874e56";
+				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		5450D5A61E728BF800048798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookSDK/HookSDK-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		5450D5A71E728BF800048798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookSDK/HookSDK-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5450D5871E728BF800048798 /* Build configuration list for PBXProject "HookSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5450D5A31E728BF800048798 /* Debug */,
+				5450D5A41E728BF800048798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5450D5A51E728BF800048798 /* Build configuration list for PBXNativeTarget "HookSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5450D5A61E728BF800048798 /* Debug */,
+				5450D5A71E728BF800048798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5450D5841E728BF800048798 /* Project object */;
+}
